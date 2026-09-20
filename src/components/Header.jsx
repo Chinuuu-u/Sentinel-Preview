@@ -12,7 +12,7 @@ export default function Header({ dark, toggleTheme, mobile, setMobile }) {
           <div className="grid h-9.5 w-9.5 place-items-center overflow-hidden rounded-xl ">
             {/* Put your logo at public/assets/logo.png */}
             {/* <span className="font-mono text-[13px] font-bold text-[var(--primary)]">C</span> */}
-            <img src="public/assets/logo.png" alt="" />
+            <img src="/assets/logo.png" alt="" />
           </div>
           CHERENKOV
         </a>
