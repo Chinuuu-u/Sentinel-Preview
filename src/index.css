@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+:root {
+  --bg: #f7f9fc;
+  --surface: #fff;
+  --surface-2: #eef3f8;
+  --text: #0b1628;
+  --muted: #607089;
+  --line: #dbe4ef;
+  --primary: #155eef;
+  --cyan: #00a9c8;
+  --green: #00a878;
+  --danger: #ef4444;
+  --grid: rgba(21,94,239,.07);
+}
+
+html.dark {
+  --bg: #070b12;
+  --surface: #0d131d;
+  --surface-2: #111b28;
+  --text: #f4f8ff;
+  --muted: #8d9bb0;
+  --line: #1d2a3a;
+  --primary: #5b8cff;
+  --cyan: #32d3ec;
+  --green: #35d49b;
+  --danger: #ff6b75;
+  --grid: rgba(91,140,255,.08);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Manrope", sans-serif;
+}
+button, a { -webkit-tap-highlight-color: transparent; }
+
+.hero-grid {
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.hero-glow {
+  background:
+    radial-gradient(circle at 75% 30%, color-mix(in srgb,var(--primary) 18%,transparent), transparent 34%),
+    radial-gradient(circle at 20% 70%, color-mix(in srgb,var(--cyan) 10%,transparent), transparent 30%);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: .7s ease;
+}
+.reveal.show {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
