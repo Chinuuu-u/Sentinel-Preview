@@ -9,6 +9,7 @@ import AIEngine from "./components/AIEngine";
 import IncidentResponse from "./components/IncidentResponse";
 import Dashboard from "./components/Dashboard";
 import FooterCTA from "./components/FooterCTA";
+import FlowArchitecture from "./components/FlowArchitecture";
 import { useTheme } from "./hooks/useTheme";
 import { useReveal } from "./hooks/useReveal";
 
@@ -31,7 +32,8 @@ export default function App() {
         <Hero />
         <Stats />
         <Problem />
-        <Architecture />
+        {/* <Architecture /> */}
+        <FlowArchitecture />
         <DetectionPipeline />
         <AIEngine />
         <IncidentResponse />
