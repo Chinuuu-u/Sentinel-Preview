@@ -30,8 +30,8 @@ export default function AIEngine() {
           eyebrow="04 / AI engine"
           title="Two models. Two ways to catch a threat."
         >
-          Replace the placeholders with your actual model architecture, metrics
-          and training results.
+          {/* Replace the placeholders with your actual model architecture, metrics
+          and training results. */}
         </SectionHead>
 
         <div className="grid gap-5 md:grid-cols-2">
