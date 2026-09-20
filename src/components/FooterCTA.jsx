@@ -32,7 +32,7 @@ export default function FooterCTA() {
 
       <footer className="border-t border-(--line) py-7">
         <div className="mx-auto flex w-[92%] max-w-295 flex-col justify-between gap-3 text-xs text-(--muted) sm:flex-row">
-          <span>© 2026 CHERENKOV · Replace with your team / institution.</span>
+          <span>© 2026 CHERENKOV · Debug_Thugs</span>
           <span className="font-mono">
             BUILT FOR SECURITY • DESIGNED FOR ONE-WAY NETWORKS
           </span>
