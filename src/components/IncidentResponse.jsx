@@ -21,7 +21,7 @@ const responses = [
 export default function IncidentResponse() {
   return (
     <section className="section-pad" id="response">
-      <div className="mx-auto w-[92%] max-w-[1180px]">
+      <div className="mx-auto w-[92%] max-w-295">
         <SectionHead
           eyebrow="05 / Incident response"
           title="Detection is only useful when the evidence is actionable."
@@ -36,16 +36,22 @@ export default function IncidentResponse() {
               key={title}
               className="reveal rounded-[22px] border border-[var(--line)] bg-[var(--surface)] p-7"
             >
-              <span className={`font-mono text-[11px] font-medium uppercase tracking-[.12em] ${color}`}>
+              <span
+                className={`font-mono text-[11px] font-medium uppercase tracking-[.12em] ${color}`}
+              >
                 {label}
               </span>
 
               <div className={`mt-4 flex items-center gap-3 ${color}`}>
                 <Icon />
-                <h3 className="text-xl font-bold text-[var(--text)]">{title}</h3>
+                <h3 className="text-xl font-bold text-[var(--text)]">
+                  {title}
+                </h3>
               </div>
 
-              <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{text}</p>
+              <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+                {text}
+              </p>
             </div>
           ))}
         </div>
