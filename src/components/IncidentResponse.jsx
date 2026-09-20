@@ -26,8 +26,7 @@ export default function IncidentResponse() {
           eyebrow="05 / Incident response"
           title="Detection is only useful when the evidence is actionable."
         >
-          Show judges exactly what happens after a model produces a suspicious
-          event.
+          Shows exactly what happens after a model produces a suspicious event.
         </SectionHead>
 
         <div className="grid gap-5 md:grid-cols-2">

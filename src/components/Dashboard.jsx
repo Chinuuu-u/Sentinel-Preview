@@ -9,8 +9,8 @@ export default function Dashboard() {
           eyebrow="06 / Product concept"
           title="A command center for one-way network visibility."
         >
-          Dummy dashboard below. Replace the chart data, alert rows and cards
-          with your real application screenshots or live API output.
+          {/* Dummy dashboard below. Replace the chart data, alert rows and cards
+          with your real application screenshots or live API output. */}
         </SectionHead>
 
         <div className="reveal rounded-[25px] border border-[#21334a] bg-[#08111e] p-5 shadow-2xl md:p-6">
@@ -23,9 +23,10 @@ export default function Dashboard() {
             </span>
           </div>
 
-          <div className="grid gap-4 lg:grid-cols-[1.2fr_.8fr]">
-            <TrafficChart />
-            <AlertList />
+          <div className="flex justify-center items-center">
+            {/* <TrafficChart /> */}
+            {/* <AlertList /> */}
+            <Demo />
           </div>
         </div>
       </div>
@@ -73,6 +74,16 @@ function AlertList() {
           </div>
         ))}
       </div>
+    </div>
+  );
+}
+function Demo() {
+  return (
+    <div className="h-full w-full">
+      <video width="320" height="240" controls className="h-screen w-screen">
+        <source src="/assets/demo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 }

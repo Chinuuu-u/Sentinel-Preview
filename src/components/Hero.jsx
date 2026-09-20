@@ -64,26 +64,33 @@ function DetectorTerminal() {
         </div>
 
         <div className="p-6 font-mono text-xs leading-8 text-[#b9c8dc]">
-          <Line time="12:41:08">ingest.flow <Green>OK</Green></Line>
+          <Line time="12:41:08">
+            ingest.flow <Green>OK</Green>
+          </Line>
           <Line time="12:41:09">packets=1,284</Line>
-          <Line time="12:41:10">feature_vector <Green>READY</Green></Line>
+          <Line time="12:41:10">
+            feature_vector <Green>READY</Green>
+          </Line>
           <Line time="12:41:10">cnn.score=0.93</Line>
           <Line time="12:41:10">anomaly.score=0.87</Line>
-          <Line time="12:41:11">threat <Red>HIGH</Red></Line>
+          <Line time="12:41:11">
+            threat <Red>HIGH</Red>
+          </Line>
           <Line time="12:41:11">alert_id=CH-7A19</Line>
           <div className="mt-2 text-[#6e819a]">— evidence attached —</div>
         </div>
       </div>
 
       <div className="mt-4 w-full rounded-[18px] border border-[var(--line)] bg-[var(--surface)] p-[18px] shadow-2xl sm:absolute sm:-bottom-8 sm:-right-7 sm:mt-0 sm:w-[235px]">
-        <small className="text-[11px] text-[var(--muted)]">THREAT CONFIDENCE</small>
-        <div className="text-[34px] font-extrabold text-[var(--danger)]">93%</div>
+        <small className="text-[11px] text-[var(--muted)]">
+          THREAT CONFIDENCE
+        </small>
+        <div className="text-[34px] font-extrabold text-[var(--danger)]">
+          93%
+        </div>
         <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-[var(--surface-2)]">
           <span className="block h-full w-[84%] rounded-full bg-gradient-to-r from-[var(--primary)] to-[var(--danger)]" />
         </div>
-        <small className="mt-2 block text-[10px] text-[var(--muted)]">
-          Example data — replace with your real output.
-        </small>
       </div>
     </div>
   );
