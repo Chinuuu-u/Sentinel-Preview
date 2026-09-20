@@ -34,7 +34,7 @@ export default function IncidentResponse() {
           {responses.map(({ label, title, Icon, color, text }) => (
             <div
               key={title}
-              className="reveal rounded-[22px] border border-[var(--line)] bg-[var(--surface)] p-7"
+              className="reveal rounded-[22px] border border-(--line) bg-(--surface) p-7"
             >
               <span
                 className={`font-mono text-[11px] font-medium uppercase tracking-[.12em] ${color}`}
@@ -44,14 +44,10 @@ export default function IncidentResponse() {
 
               <div className={`mt-4 flex items-center gap-3 ${color}`}>
                 <Icon />
-                <h3 className="text-xl font-bold text-[var(--text)]">
-                  {title}
-                </h3>
+                <h3 className="text-xl font-bold text-(--text)">{title}</h3>
               </div>
 
-              <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                {text}
-              </p>
+              <p className="mt-2 text-sm leading-6 text-(--muted)">{text}</p>
             </div>
           ))}
         </div>
